@@ -29,13 +29,22 @@ const App = () => {
             id: 1
         },
         {
-            name: "space-around",
+            name: "center",
             id: 2
+        },
+        {
+            name: "space-around",
+            id: 3
+        },
+        {
+            name: 'space-evenly',
+            id: 4
         }
     ];
 
     const [direction, setDirection] = useState('row');
     const [directionStyle, setDirectionStyle] = useState('fd__Main');
+    const [justifyStyle, setJustifyStyle] = useState('justify__Main');
 
     const changeDirection = (name) => {
           if (name === 'column') {
@@ -46,7 +55,19 @@ const App = () => {
               setDirectionStyle('fd__Main__columnReverse');
           } else if (name === 'row-reverse') {
               setDirectionStyle('fd__Main__rowReverse');
-          }
+          } 
+    }
+
+    const changeJustifyStyle = (name) => {
+        if (name === "center") {
+            setJustifyStyle("justify__Main");
+        } else if (name === "space-between") {
+            setJustifyStyle("justify__Main__space-between");
+        } else if (name === "space-around") {
+            setJustifyStyle("justify__Main__space-around");
+        } else if (name === "space-evenly") {
+            setJustifyStyle("justify__Main__space-evenly");
+        }
     }
 
     return(
@@ -55,7 +76,7 @@ const App = () => {
                 <h1>Flexbox Visualisation</h1>
             </div>
             <FlexDirection direction={direction} directions={directions} change={changeDirection} style={directionStyle} />
-            <Justify />
+            <Justify justifyOptions={justifyOptions} style={justifyStyle} click={changeJustifyStyle} />
         </div>
     )
 }
