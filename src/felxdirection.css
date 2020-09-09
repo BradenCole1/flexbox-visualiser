@@ -1,0 +1,134 @@
+.flexDirection__Main {
+    display: flex;
+    width: 80vw;
+    height: 70vh;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fd__Header {
+    padding: 10px 0;
+}
+
+.fd__Main {
+    display: flex;
+    background-color: purple;
+    height: 400px;
+    width: 80%;
+    flex: 3;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px lightgray;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fd__Main__column {
+    display: flex;
+    background-color: purple;
+    height: 400px;
+    width: 80%;
+    flex: 3;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px lightgray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fd__Main__columnReverse {
+    display: flex;
+    background-color: purple;
+    height: 400px;
+    width: 80%;
+    flex: 3;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px lightgray;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.fd__Main__rowReverse {
+    display: flex;
+    background-color: purple;
+    height: 400px;
+    width: 80%;
+    flex: 3;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px lightgray;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.fd__Options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.fd__Options > p {
+    margin: 0 auto;
+    color: blue;
+}
+
+.A {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.B {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.C {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dirButton {
+    padding: 10px;
+    width: 150px;
+    font-weight: 700;
+}
+
+.dirButton:hover {
+    cursor: pointer;
+}
